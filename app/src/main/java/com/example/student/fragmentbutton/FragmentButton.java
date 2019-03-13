@@ -29,7 +29,7 @@ public class FragmentButton extends Fragment {
         btnA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tdl.thaydoi("This is A");
+                tdl.thaydoi("A Context");
             }
         });
 
@@ -37,15 +37,16 @@ public class FragmentButton extends Fragment {
         btnB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tdl.thaydoi("This is B");
+                tdl.thaydoi("B Context");
             }
         });
 
         btnC = (Button) view.findViewById(R.id.btnc);
-btnC.setOnClickListener(new View.OnClickListener() {
+
+        btnC.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        tdl.thaydoi("This is C");
+        tdl.thaydoi("C Context");
     }
 });
         return view;
